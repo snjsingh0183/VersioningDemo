@@ -29,7 +29,6 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                	<tagBase>https://github.com/snjsingh0183/VersioningDemo/releases</tagBase>
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
