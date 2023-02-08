@@ -4,7 +4,7 @@
 
     <groupId>org.ea</groupId>
     <artifactId>VersioningDemo</artifactId>
-    <version>0.6</version>
+    <version>0.6-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -16,11 +16,11 @@
         <archetype.encoding>${encoding}</archetype.encoding>
     </properties>
 
-    <scm>
-        
+      <scm>
+        <connection>scm:git:git@github.com:snjsingh0183/VersioningDemo.git</connection>
         <developerConnection>scm:git:git@github.com:snjsingh0183/VersioningDemo.git</developerConnection>
-        
-        <tag>0.6</tag>
+        <url>https://github.com/snjsingh0183/VersioningDemo</url>
+        <tag>@{project.version}</tag>
     </scm>
 
     <build>
@@ -29,6 +29,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
+                	<tagBase>https://github.com/snjsingh0183/VersioningDemo/releases</tagBase>
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
